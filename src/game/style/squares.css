@@ -1,0 +1,86 @@
+.square:after {
+  content: "";
+  float: left;
+  display: block;
+  padding-top: 100%;
+}
+
+.square {
+  border: 1px solid black;
+  background-color: white;
+  margin-left: -1px;
+  margin-top: -1px;
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.squareYellow:after {
+  content: "";
+  float: left;
+  display: block;
+  padding-top: 100%;
+}
+
+.selected {
+  background-color: rgb(83, 203, 240);
+}
+
+.mistake {
+  background-color: rgb(255, 139, 139);
+}
+
+.selectedRange {
+  background-color: rgb(215, 249, 255);
+}
+
+.thickRight {
+  border-right: 2px solid black;
+}
+
+.thickBottom {
+  border-bottom: 2px solid black;
+}
+
+.row {
+  display: block;
+  width: 100%;
+  height: calc(100% / 3);
+  font-size: 0.3em;
+  border: 1px solid red;
+}
+
+.col {
+  display: inline-block;
+  width: calc(100%/3);
+}
+
+
+.inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.miniGrid {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 0.3em;
+  opacity: 0.5;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, calc(100% / 3));
+}
+
+.miniSquare {
+  padding: 0.1em;
+  padding-top: 0.2em;
+  justify-self: center;
+}

@@ -1,0 +1,30 @@
+.functionRow {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  vertical-align: top;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  margin-left: 3.5em;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
+}
+
+.imageContainer:active {
+  display: inline-block;
+  transform: scale(0.90);
+}
+
+.functionImage {
+  width: 100%;
+  height: 100%;
+}

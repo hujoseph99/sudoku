@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url('./fonts/poppins.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'PoppinsRegular';
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menuContainer {
+  width: 100%;
+  max-width: 30em;
+
+  position: relative;
+  /* padding: 1em; */
+
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+
+  /* Disable text selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.startButton {
+  position: relative;
+  display: block;
+
+  font-family: 'PoppinsRegular';
+  font-size: 1.2em;
+  font-weight: bold;
+
+  background-color: rgb(7, 76, 188);
+  color: white;
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  border-radius: 0.5em;
+
+  outline: none;
+  border: none;
+
+  margin: 0 auto;
+}
+
+.difficultyTable {
+  display: inline-block;
+  position: relative;
+
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.difficultyTable td, .difficultyTable th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.difficultyTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.difficultyTable th {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  background-color: rgb(7, 76, 188);
+  color: white;
+}
+
+.help {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 2em;
+  height: 2em;
+}
+
+.help:hover {
+  transform: scale(1.05);
+}
+
+.help:active {
+  transform: scale(0.9);
+}
+
+.startButton:hover {
+  transform: scale(1.05);
+}
+
+.startButton:active {
+  transform: scale(0.9);
+}

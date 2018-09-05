@@ -1,0 +1,26 @@
+.scrollBar {
+  width: 100%;
+  max-width: 30em;
+  height: 5vh;
+
+  position: relative;
+
+  margin: 5vh auto;
+  /* border: 1px solid green; */
+}
+
+.rc-slider-handle:focus {
+  border: none;
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+  outline: none;
+}
+
+.rc-slider-handle:active {
+  border: none;
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+  outline: none;
+}
