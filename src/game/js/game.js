@@ -480,12 +480,11 @@ class Game extends React.Component {
     const notes = this.state.history[this.state.currStep].notes.slice();
     const text = (
       <div>
-        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, debitis?</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro error vitae quidem ipsa illum, atque suscipit soluta ducimus itaque delectus.</p>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis expedita impedit ipsam, accusantium qui commodi voluptates nobis molestiae libero aut, architecto voluptate magnam a debitis, doloremque perferendis sequi tenetur!</p>
-        <button onClick={() => this.handleCloseWinModal()}>Close Modal</button>
-        <button onClick={() => this.props.restartGame()}>Back to Main Menu</button>
+        <h1 align="center">Congratulations! You won!</h1>
+        <div className="buttonRow">
+          <button className="button" onClick={() => this.handleCloseWinModal()}>Return to Board</button>
+          <button className="button" onClick={() => this.props.restartGame()}>Back to Main Menu</button>
+        </div>
       </div>
     );
 
@@ -528,6 +527,8 @@ class Game extends React.Component {
             />
             <TextBox 
               text                  = {text}
+              boxHeight             = "30%"
+              boxWidth              = "40%"
               modalOpen             = {this.state.winModalOpen}
               handleCloseWinModal   = {() => this.handleCloseWinModal()}
             />

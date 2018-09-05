@@ -38,6 +38,34 @@
   /* border: 1px solid red; */
 }
 
+.buttonRow {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  width: 100%;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+
+  font-family: 'PoppinsRegular';
+  font-size: 1.2em;
+  font-weight: bold;
+
+  background-color: rgb(7, 76, 188);
+  color: white;
+  margin-top: 1em;
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  border-radius: 0.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+
+  outline: none;
+  border: none;
+}
+
 .board {
   position: relative;
   display: block;
